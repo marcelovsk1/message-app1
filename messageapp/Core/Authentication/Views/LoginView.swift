@@ -15,7 +15,19 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image(systemName: "globe")
+                Image("messengerapp")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 220, height: 220)
+                
+                TextField("Enter your e-mail", text: $email)
+                    .autocapitalization(.none)
+                    .font(.subheadline)
+                    .padding(12)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .padding(.horizontal, 24)
+                
             }
         }
     }

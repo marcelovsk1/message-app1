@@ -12,6 +12,7 @@
 		0BDF59DD2B191FE700D01631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF59DC2B191FE700D01631 /* Assets.xcassets */; };
 		0BDF59E02B191FE700D01631 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF59DF2B191FE700D01631 /* Preview Assets.xcassets */; };
 		0BDF59EB2B19210A00D01631 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF59EA2B19210A00D01631 /* LoginView.swift */; };
+		0BDF59ED2B1A64EA00D01631 /* messengerapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF59EC2B1A64E900D01631 /* messengerapp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0BDF59DC2B191FE700D01631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BDF59DF2B191FE700D01631 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BDF59EA2B19210A00D01631 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0BDF59EC2B1A64E900D01631 /* messengerapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messengerapp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				0BDF59D82B191FE600D01631 /* messageappApp.swift */,
 				0BDF59E62B19206B00D01631 /* Core */,
 				0BDF59DC2B191FE700D01631 /* Assets.xcassets */,
+				0BDF59EC2B1A64E900D01631 /* messengerapp.png */,
 				0BDF59DE2B191FE700D01631 /* Preview Content */,
 			);
 			path = messageapp;
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDF59ED2B1A64EA00D01631 /* messengerapp.png in Resources */,
 				0BDF59E02B191FE700D01631 /* Preview Assets.xcassets in Resources */,
 				0BDF59DD2B191FE700D01631 /* Assets.xcassets in Resources */,
 			);
