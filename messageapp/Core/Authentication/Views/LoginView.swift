@@ -27,7 +27,14 @@ struct LoginView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
-                
+         
+                SecureField("Enter your password", text: $passwrod)
+                    .autocapitalization(.none)
+                    .font(.subheadline)
+                    .padding(12)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .padding(.horizontal, 24)
             }
         }
     }
