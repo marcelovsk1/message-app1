@@ -36,6 +36,19 @@ struct LoginView: View {
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
                     .padding(.top, 5)
+                
+                Button {
+                    //
+                } label: {
+                    Text("Login")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 44)
+                        .background(Color(.systemBlue))
+                        .cornerRadius(8)
+                        .padding(.vertical)
+                }
             }
         }
     }
