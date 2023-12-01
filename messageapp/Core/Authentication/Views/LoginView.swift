@@ -15,7 +15,7 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
+                Image(systemName: "globe")
             }
         }
     }
