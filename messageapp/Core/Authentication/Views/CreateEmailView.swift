@@ -44,6 +44,8 @@ struct CreateEmailView: View {
                     .cornerRadius(8)
                     .padding(.vertical)
             }
+            
+            Spacer()
         }
     }
 }

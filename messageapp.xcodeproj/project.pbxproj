@@ -14,6 +14,7 @@
 		0BDF59EB2B19210A00D01631 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF59EA2B19210A00D01631 /* LoginView.swift */; };
 		0BDF59ED2B1A64EA00D01631 /* messengerapp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF59EC2B1A64E900D01631 /* messengerapp.png */; };
 		0BDF59EF2B1A677C00D01631 /* CreateEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF59EE2B1A677C00D01631 /* CreateEmailView.swift */; };
+		0BE8E0B62B29E2DF00D1BDB8 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0BDF59EA2B19210A00D01631 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0BDF59EC2B1A64E900D01631 /* messengerapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messengerapp.png; sourceTree = "<group>"; };
 		0BDF59EE2B1A677C00D01631 /* CreateEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmailView.swift; sourceTree = "<group>"; };
+		0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				0BDF59EA2B19210A00D01631 /* LoginView.swift */,
 				0BDF59EE2B1A677C00D01631 /* CreateEmailView.swift */,
+				0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDF59EB2B19210A00D01631 /* LoginView.swift in Sources */,
+				0BE8E0B62B29E2DF00D1BDB8 /* CreateUsernameView.swift in Sources */,
 				0BDF59DB2B191FE600D01631 /* ContentView.swift in Sources */,
 				0BDF59D92B191FE600D01631 /* messageappApp.swift in Sources */,
 				0BDF59EF2B1A677C00D01631 /* CreateEmailView.swift in Sources */,

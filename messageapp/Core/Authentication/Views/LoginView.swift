@@ -50,7 +50,7 @@ struct LoginView: View {
                         .padding(.vertical)
                 }
                 NavigationLink {
-                    //
+                    CreateEmailView()
                 } label: {
                     HStack {
                         Text("No account?")
