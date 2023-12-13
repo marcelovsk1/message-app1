@@ -25,6 +25,25 @@ struct CreateEmailView: View {
                 .padding(.horizontal, 24)
             
             TextField("E-mail", text: $email)
+                .font(.subheadline)
+                .padding(12)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                .padding(.horizontal, 24)
+                .padding(.top, 5)
+            
+            NavigationLink {
+                //
+            } label: {
+                Text("Next")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 360, height: 44)
+                    .background(Color(.systemBlue))
+                    .cornerRadius(8)
+                    .padding(.vertical)
+            }
         }
     }
 }
