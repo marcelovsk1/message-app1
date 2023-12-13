@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct CreateUsernameView: View {
-    @State private var email = ""
+    @State private var username = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 12) {
-            Text("Add your email")
+            Text("Create your username")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("You'll use this e-mail to sign in to your account.")
+            Text("This username will be displayed to other people")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("E-mail", text: $email)
+            TextField("Username", text: $username)
                 .font(.subheadline)
                 .padding(12)
                 .background(Color(.systemGray6))
