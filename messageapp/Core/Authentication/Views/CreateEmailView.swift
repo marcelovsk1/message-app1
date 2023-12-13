@@ -23,6 +23,8 @@ struct CreateEmailView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
+            
+            TextField("E-mail", text: $email)
         }
     }
 }
