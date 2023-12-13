@@ -33,7 +33,7 @@ struct CreatePasswordView: View {
                 .padding(.top, 5)
             
             NavigationLink {
-                //
+                CreateProfileImageView()
             } label: {
                 Text("Next")
                     .font(.subheadline)

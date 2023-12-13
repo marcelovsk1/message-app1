@@ -16,6 +16,7 @@
 		0BDF59EF2B1A677C00D01631 /* CreateEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF59EE2B1A677C00D01631 /* CreateEmailView.swift */; };
 		0BE8E0B62B29E2DF00D1BDB8 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */; };
 		0BE8E0B82B29E98A00D1BDB8 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B72B29E98A00D1BDB8 /* CreatePasswordView.swift */; };
+		0BE8E0BA2B29EA7C00D1BDB8 /* CreateProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B92B29EA7C00D1BDB8 /* CreateProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0BDF59EE2B1A677C00D01631 /* CreateEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmailView.swift; sourceTree = "<group>"; };
 		0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		0BE8E0B72B29E98A00D1BDB8 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		0BE8E0B92B29EA7C00D1BDB8 /* CreateProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				0BDF59EE2B1A677C00D01631 /* CreateEmailView.swift */,
 				0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */,
 				0BE8E0B72B29E98A00D1BDB8 /* CreatePasswordView.swift */,
+				0BE8E0B92B29EA7C00D1BDB8 /* CreateProfileImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDF59EB2B19210A00D01631 /* LoginView.swift in Sources */,
+				0BE8E0BA2B29EA7C00D1BDB8 /* CreateProfileImageView.swift in Sources */,
 				0BE8E0B62B29E2DF00D1BDB8 /* CreateUsernameView.swift in Sources */,
 				0BDF59DB2B191FE600D01631 /* ContentView.swift in Sources */,
 				0BE8E0B82B29E98A00D1BDB8 /* CreatePasswordView.swift in Sources */,
