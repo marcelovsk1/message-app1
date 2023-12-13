@@ -33,7 +33,7 @@ struct CreateEmailView: View {
                 .padding(.top, 5)
             
             NavigationLink {
-                //
+                CreateUsernameView()
             } label: {
                 Text("Next")
                     .font(.subheadline)
