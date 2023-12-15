@@ -11,6 +11,10 @@ struct CreatePasswordView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     
+    var isValidPassword: Bool {
+        return viewModel.password.count >= 6
+    }
+    
     var body: some View {
         VStack(spacing: 12) {
             Text("Create your password")
@@ -39,6 +43,9 @@ struct CreatePasswordView: View {
                     .modifier(CustomButtonModifier())
                     .padding(.vertical)
             }
+            .opacity(isValidPassword ? 1.0 : 0.9)
+            .brightness(isValidPassword ? 0.0 : -0.2)
+            .disabled(!isValidPassword)
             
             Spacer()
         }
@@ -46,6 +53,6 @@ struct CreatePasswordView: View {
 }
 
 
-#Preview {
-    CreatePasswordView()
-}
+//#Preview {
+//    CreatePasswordView()
+//}
