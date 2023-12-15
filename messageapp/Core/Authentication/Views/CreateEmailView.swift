@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CreateEmailView: View {
-    @State private var email = ""
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -24,7 +24,7 @@ struct CreateEmailView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("E-mail", text: $email)
+            TextField("E-mail", text: $viewModel.email)
                 .font(.subheadline)
                 .padding(12)
                 .background(Color(.systemGray6))

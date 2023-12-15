@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CreateUsernameView: View {
-    @State private var username = ""
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -24,7 +24,7 @@ struct CreateUsernameView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Username", text: $username)
+            TextField("Username", text: $viewModel.username)
                 .font(.subheadline)
                 .padding(12)
                 .background(Color(.systemGray6))

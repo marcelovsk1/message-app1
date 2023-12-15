@@ -20,7 +20,9 @@ class AuthenticationViewModel: ObservableObject {
     
     @Published var selectedImage: PhotosPickerItem? {
         didSet {
-            
+            Task {
+                await loadImage()
+            }
         }
     }
     
@@ -28,5 +30,8 @@ class AuthenticationViewModel: ObservableObject {
     func loadImage() async {
         guard let item = selectedImage else { return }
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
+        guard let uiImage = UIImage(data: data) else { return }
+        self.uiImage = uiImage
+        self.profileImage = Image(uiImage: uiImage)
     }
 }
