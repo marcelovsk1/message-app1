@@ -11,6 +11,10 @@ struct CreateEmailView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     
+    var isEmailValid: Bool {
+        return viewModel.email.contains("@live.com")
+    }
+    
     var body: some View {
         VStack(spacing: 12) {
             Text("Add your email")

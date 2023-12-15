@@ -10,8 +10,11 @@ import SwiftUI
 struct LoginView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @State private var email = ""
-    @State private var passwrod = ""
+    @State private var password = ""
     
+    var isLoginVaild: Bool {
+        email.contains("@live.com") && password.count >= 6
+    }
     
     var body: some View {
         NavigationView {
@@ -29,7 +32,7 @@ struct LoginView: View {
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
          
-                SecureField("Enter your password", text: $passwrod)
+                SecureField("Enter your password", text: $password)
                     .autocapitalization(.none)
                     .font(.subheadline)
                     .padding(12)
@@ -45,6 +48,10 @@ struct LoginView: View {
                         .modifier(CustomButtonModifier())
                         .padding(.vertical)
                 }
+                .opacity(isLoginVaild ? 1.0 : 0.9)
+                .brightness(isLoginVaild ? 0.0 : -0.2)
+                .disabled(!isLoginVaild)
+                
                 NavigationLink {
                     CreateEmailView()
                 } label: {
