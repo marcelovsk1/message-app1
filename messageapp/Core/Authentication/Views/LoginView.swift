@@ -12,7 +12,7 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
-    var isLoginVaild: Bool {
+    var isLoginValid: Bool {
         email.contains("@live.com") && password.count >= 6
     }
     
@@ -48,9 +48,9 @@ struct LoginView: View {
                         .modifier(CustomButtonModifier())
                         .padding(.vertical)
                 }
-                .opacity(isLoginVaild ? 1.0 : 0.9)
-                .brightness(isLoginVaild ? 0.0 : -0.2)
-                .disabled(!isLoginVaild)
+                .opacity(isLoginValid ? 1.0 : 0.9)
+                .brightness(isLoginValid ? 0.0 : -0.2)
+                .disabled(!isLoginValid)
                 
                 NavigationLink {
                     CreateEmailView()
