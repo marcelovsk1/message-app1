@@ -38,6 +38,7 @@ struct CreatePasswordView: View {
             
             NavigationLink {
                 CreateProfileImageView()
+                    .navigationBarBackButtonHidden(true)
             } label: {
                 Text("Next")
                     .modifier(CustomButtonModifier())
@@ -48,6 +49,16 @@ struct CreatePasswordView: View {
             .disabled(!isValidPassword)
             
             Spacer()
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .imageScale(.large)
+                }
+            }
         }
     }
 }

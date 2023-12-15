@@ -54,6 +54,7 @@ struct LoginView: View {
                 
                 NavigationLink {
                     CreateEmailView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
                         Text("No account?")

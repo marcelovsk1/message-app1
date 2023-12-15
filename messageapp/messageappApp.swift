@@ -1,17 +1,22 @@
-//
-//  messageappApp.swift
-//  messageapp
-//
-//  Created by Marcelo Amaral Alves on 2023-11-30.
-//
-
 import SwiftUI
+import FirebaseCore
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+    return true
+  }
+}
 
 @main
-struct messageappApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct menssageapp: App {
+  // register app delegate for Firebase setup
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+  var body: some Scene {
+    WindowGroup {
+        ContentView()
     }
+  }
 }

@@ -8,6 +8,7 @@
 import Foundation
 import PhotosUI
 import SwiftUI
+import Firebase
 
 class AuthenticationViewModel: ObservableObject {
     @Published var email = ""
@@ -33,5 +34,23 @@ class AuthenticationViewModel: ObservableObject {
         guard let uiImage = UIImage(data: data) else { return }
         self.uiImage = uiImage
         self.profileImage = Image(uiImage: uiImage)
+    }
+    
+    @MainActor
+    func login(email: String, password: String) async throws {
+        do {
+            try await Auth.auth().signIn(withEmail: email, password: password)
+        } catch {
+            print("Failed to sign in user \(error.localizedDescription)")
+        }
+    }
+    
+    @MainActor
+    func createUser() async throws {
+        do {
+            let result = try await Auth.auth().createUser(withEmail: password, password: password)
+        } catch {
+            print("Failed to sign in user \(error.localizedDescription)")
+        }
     }
 }

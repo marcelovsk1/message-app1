@@ -51,7 +51,8 @@ struct CreateProfileImageView: View {
             }
             
             NavigationLink {
-                //
+                ContinueView()
+                    .navigationBarBackButtonHidden(true)
             } label: {
                 Text("Finish")
                     .modifier(CustomButtonModifier())
@@ -63,6 +64,16 @@ struct CreateProfileImageView: View {
             
             Spacer()
             
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .imageScale(.large)
+                }
+            }
         }
     }
 }
