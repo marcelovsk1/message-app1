@@ -34,13 +34,37 @@ struct CreateProfileImageView: View {
                             .frame(width: 80, height: 80)
                     } else {
                         Image(systemName: "person.circle.fill")
+                            .resizable()
+                            .clipShape(Circle())
+                            .foregroundColor(Color(.systemGray6))
+                            .frame(width: 80, height: 80)
                     }
+                    
+                    Text("Edit Profile Picture")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
                 }
             }
+            
+            NavigationLink {
+                //
+            } label: {
+                Text("Finish")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 360, height: 44)
+                    .background(Color(.systemBlue))
+                    .cornerRadius(8)
+                    .padding(.vertical)
+            }
+            
+            Spacer()
+            
         }
     }
 }
 
-#Preview {
-    CreateProfileImageView()
-}
+//#Preview {
+//    CreateProfileImageView()
+//}
