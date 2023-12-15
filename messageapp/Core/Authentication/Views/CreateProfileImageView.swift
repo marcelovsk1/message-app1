@@ -13,7 +13,13 @@ struct CreateProfileImageView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 12) {
+            Text("Add a profile image")
+                .font(.title2)
+                .fontWeight(.bold)
+                .padding(.top)
+            
+        }
     }
 }
 
