@@ -43,12 +43,15 @@ struct CreateEmailView: View {
                     .modifier(CustomButtonModifier())
                     .padding(.vertical)
             }
+            .opacity(isEmailValid ? 1.0 : 0.9)
+            .brightness(isEmailValid ? 0.0 : -0.2)
+            .disabled(!isEmailValid)
             
             Spacer()
         }
     }
 }
 
-#Preview {
-    CreateEmailView()
-}
+//#Preview {
+//    CreateEmailView()
+//}
