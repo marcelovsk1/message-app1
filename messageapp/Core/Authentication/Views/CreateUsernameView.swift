@@ -11,6 +11,10 @@ struct CreateUsernameView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     
+    var isValidUsername: Bool {
+        return !viewModel.username.isEmpty
+    }
+    
     var body: some View {
         VStack(spacing: 12) {
             Text("Create your username")
@@ -39,6 +43,9 @@ struct CreateUsernameView: View {
                     .modifier(CustomButtonModifier())
                     .padding(.vertical)
             }
+            .opacity(isValidUsername ? 1.0 : 0.9)
+            .brightness(isValidUsername ? 0.0 : -0.2)
+            .disabled(!isValidUsername)
             
             Spacer()
         }
