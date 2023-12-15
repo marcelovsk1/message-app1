@@ -44,7 +44,7 @@ struct CreateProfileImageView: View {
                             .frame(width: 80, height: 80)
                     }
                     
-                    Text("Edit Profile Picture")
+                    Text("Edit your Profile Picture")
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
