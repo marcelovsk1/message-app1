@@ -17,6 +17,7 @@
 		0BE8E0B62B29E2DF00D1BDB8 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */; };
 		0BE8E0B82B29E98A00D1BDB8 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B72B29E98A00D1BDB8 /* CreatePasswordView.swift */; };
 		0BE8E0BA2B29EA7C00D1BDB8 /* CreateProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0B92B29EA7C00D1BDB8 /* CreateProfileImageView.swift */; };
+		0BE8E0BD2B29EFCF00D1BDB8 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E0BC2B29EFCF00D1BDB8 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		0BE8E0B52B29E2DF00D1BDB8 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		0BE8E0B72B29E98A00D1BDB8 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		0BE8E0B92B29EA7C00D1BDB8 /* CreateProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileImageView.swift; sourceTree = "<group>"; };
+		0BE8E0BC2B29EFCF00D1BDB8 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				0BDF59DA2B191FE600D01631 /* ContentView.swift */,
 				0BDF59E72B19207300D01631 /* Authentication */,
+				0BE8E0BB2B29EF7700D1BDB8 /* ViewModel */,
 				0BDF59E82B19209700D01631 /* Main */,
 			);
 			path = Core;
@@ -115,6 +118,14 @@
 				0BE8E0B92B29EA7C00D1BDB8 /* CreateProfileImageView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0BE8E0BB2B29EF7700D1BDB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E0BC2B29EFCF00D1BDB8 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				0BE8E0BA2B29EA7C00D1BDB8 /* CreateProfileImageView.swift in Sources */,
 				0BE8E0B62B29E2DF00D1BDB8 /* CreateUsernameView.swift in Sources */,
 				0BDF59DB2B191FE600D01631 /* ContentView.swift in Sources */,
+				0BE8E0BD2B29EFCF00D1BDB8 /* AuthenticationViewModel.swift in Sources */,
 				0BE8E0B82B29E98A00D1BDB8 /* CreatePasswordView.swift in Sources */,
 				0BDF59D92B191FE600D01631 /* messageappApp.swift in Sources */,
 				0BDF59EF2B1A677C00D01631 /* CreateEmailView.swift in Sources */,
