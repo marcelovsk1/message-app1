@@ -24,6 +24,19 @@ struct CreateProfileImageView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
+            
+            PhotosPicker(selection: $viewModel.selectedImage) {
+                VStack {
+                    if let image = viewModel.profileImage {
+                        image
+                            .resizable()
+                            .clipShape(Circle())
+                            .frame(width: 80, height: 80)
+                    } else {
+                        Image(systemName: "person.circle.fill")
+                    }
+                }
+            }
         }
     }
 }
