@@ -12,6 +12,10 @@ struct CreateProfileImageView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss
     
+    var isValidProfileImage: Bool {
+        return viewModel.profileImage != nil
+    }
+    
     var body: some View {
         VStack(spacing: 12) {
             Text("Add a profile image")
@@ -53,6 +57,9 @@ struct CreateProfileImageView: View {
                     .modifier(CustomButtonModifier())
                     .padding(.vertical)
             }
+            .opacity(isValidProfileImage ? 1.0 : 0.9)
+            .brightness(isValidProfileImage ? 0.0 : -0.2)
+            .disabled(!isValidProfileImage)
             
             Spacer()
             
