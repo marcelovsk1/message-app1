@@ -36,12 +36,7 @@ struct CreatePasswordView: View {
                 CreateProfileImageView()
             } label: {
                 Text("Next")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .frame(width: 360, height: 44)
-                    .background(Color(.systemBlue))
-                    .cornerRadius(8)
+                    .modifier(CustomButtonModifier())
                     .padding(.vertical)
             }
             
