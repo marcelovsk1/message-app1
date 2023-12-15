@@ -19,6 +19,11 @@ struct CreateProfileImageView: View {
                 .fontWeight(.bold)
                 .padding(.top)
             
+            Text("This picture will be displayed to other users.")
+                .font(.footnote)
+                .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 24)
         }
     }
 }
